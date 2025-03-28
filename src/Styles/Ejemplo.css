@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --mainColor: #ddd8b8;
+    --mainColorLight: #efefef;
+    --secondaryColor: #84a9c0;
+    --thirdColor: #ffffff;
+    --borderColor: #AFAFAF;
+    --textColor: #3d518c;
+}
+
+.div-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 900px;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: var(--thirdColor);
+    gap: 5px;
+}
+
+.div-title {
+    font-family: "Winky Sans", sans-serif;
+    color: var(--textColor);
+    font-size: 2rem;
+    font-weight: bolder;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    margin-bottom: 20px;
+}
+
+.p-c-subtitle{
+    margin-left: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.p-c{
+    text-align: justify;
+    /*padding: 5px;*/
+    margin-right: 40px;
+}
+
+.p-c strong {
+    color: var(--secondaryColor); 
+    font-weight: bold; 
+}
+
+.div-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.div-code-title{
+    background-color: var(--mainColorLight);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0.5rem;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    width: calc(100% - 0px);
+    color: var(--textColor);
+    border-radius: 10px 10px 0 0;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.button-copy-code-install{
+    display: flex;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin-left: auto;
+}
+
+.p-c-subtitle{
+    margin-left: 20px;
+    font-size: 1.5rem;
+    padding: 0px;
+}
+
+.div-pre-code-install{
+    overflow-x: auto;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: calc(100% - 30px); 
+}

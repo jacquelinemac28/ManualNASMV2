@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --mainColor: #ddd8b8;
+    --mainColorLight: #efefef;
+    --secondaryColor: #84a9c0;
+    --thirdColor: #ffffff;
+    --borderColor: #AFAFAF;
+    --textColor: #3d518c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.div-body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    font-family: "Winky Sans", sans-serif;
+    background-color: var(--mainColorLight);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.div-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 900px;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: var(--thirdColor);
+    gap: 5px;
+}
+
+.div-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--thirdColor);
+    gap: 5px;
+    margin-left: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.div-menu::-webkit-scrollbar {
+    width: 3px;
+}
+
+.div-menu::-webkit-scrollbar-track {
+    background: var(--thirdColor); 
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 60px;
+}
+
+.div-menu::-webkit-scrollbar-thumb {
+    background: var(--secondaryColor); 
+    border-radius: 10px;
+}
+
+.div-menu::-webkit-scrollbar-thumb:hover {
+    background: var(--textColor); 
+}
+
+.div-title-menu {
+    font-family: "Winky Sans", sans-serif;
+    color: var(--textColor);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    height: 20px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-copy-code{
+    border-radius: 5px;
+    border: 2px solid var(--textColor);
+    background-color: var(--thirdColor);
+    padding: 8px;
+    align-items: center ;
+}
+
+.div-linea{
+    height: 2px;
+    width: 200px;
+    background-color: var(--textColor);
+}
+
+
+
+@media (max-width: 1200px) {
+    .div-principal {
+        width: 100%;
+        max-width: 700px; /* Reduce el ancho en pantallas más pequeñas */
+    }
+
+    .div-menu {
+        width: 200px; /* Reduce el ancho del menú */
+    }
+}
+
+@media (max-width: 768px) {
+    .div-body {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .div-principal,
+    .div-menu {
+        width: 90%; /* Usa un porcentaje para que se ajuste al contenedor */
+        max-width: 500px; /* Limita el ancho máximo */
+    }
+}

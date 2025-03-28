@@ -1,0 +1,8 @@
+.button-copy-code-install{
+    display: flex;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin-left: auto;
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+.div-body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    font-family: "Winky Sans", sans-serif;
+    background-color: var(--mainColorLight);
+}
+
+:root {
+    --mainColor: #ddd8b8;
+    --mainColorLight: #efefef;
+    --secondaryColor: #84a9c0;
+    --thirdColor: #ffffff;
+    --borderColor: #AFAFAF;
+    --textColor: #3d518c;
+}
+
+.div-title {
+    font-family: "Winky Sans", sans-serif;
+    color: var(--textColor);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    margin-bottom: 20px;
+}
+
+.div-info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 20px;
+}
+
+.div-que-es{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    margin: 20px;
+}
+
+.button-copy-code-install{
+    display: flex;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin-left: auto;
+}
+
+.p{
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.p-c-subtitle{
+    margin-left: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.a-windows{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.custom-list li {
+    background: #e3f2fd;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid;
+    border-radius: 5px;
+    width: calc(100% - 30px); 
+    text-align: left;
+    position: relative;
+    left: 20px;
+}
+
+.custom-list li strong {
+    color: var(--secondaryColor);
+    text-align: center;
+}
+
+.p-c{
+    margin-left: 20px;
+}
+
+.div-code-install{
+    background-color: var(--mainColorLight);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    width: calc(100% - 30px); 
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.div-pre-code-install{
+    overflow-x: auto;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: calc(100% - 30px); 
+}
+
+
+.div-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.div-code-title{
+    background-color: var(--mainColorLight);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0.5rem;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    width: calc(100% - 0px);
+    color: var(--textColor);
+    border-radius: 10px 10px 0 0;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.div-code-c{
+    padding: 20px;
+}
+
+.div-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    place-items: right;
+    justify-content: center;
+    align-items: flex-start;
+    width: 900px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: var(--thirdColor);
+}
